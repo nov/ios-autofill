@@ -2,19 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <title>iOS Autofill</title>
   </head>
   <body>
     <article>
       <h2>Signup Form</h2>
-      <form class="signup" action="#signup" method="post">
+      <form class="autofill" action="#signup" method="post">
         <p>
           <input type="text" name="username" placeholder="username" autocomplete="username" />
         </p>
         <p>
           <input type="password" name="password" placeholder="password" autocomplete="new-password" />
         </p>
-        <p><input type="password" name="password-confirmation" placeholder="password confirmation" autocomplete="new-password" />
+        <p>
+          <input type="password" name="password-confirmation" placeholder="password confirmation" autocomplete="new-password" />
+        </p>
+      </form>
+    </article>
+
+    <article>
+      <h2>Login Form</h2>
+      <form class="autofill" action="#login" method="post">
+        <p>
+          <input type="text" name="username" placeholder="username" autocomplete="username" />
+        </p>
+        <p>
+          <input type="password" name="password" placeholder="password" autocomplete="password" />
+        </p>
+      </form>
+    </article>
+
+    <article>
+      <h2>OTP Form</h2>
+      <form class="autofill" action="#otp" method="post">
+        <p>
+          <input type="text" name="otp" placeholder="otp" autocomplete="one-time-code" />
+        </p>
       </form>
     </article>
   </body>
