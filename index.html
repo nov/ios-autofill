@@ -50,5 +50,13 @@
         </p>
       </form>
     </article>
+
+    <script>
+      document.querySelectorAll('.autofill').forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+        });
+      });
+    </script>
   </body>
 </html>
